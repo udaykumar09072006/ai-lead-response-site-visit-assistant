@@ -1,0 +1,1912 @@
+You are a senior full-stack engineer, AI agent engineer, product designer, and SaaS architect.
+
+Build a complete production-quality prototype for the following client brief.
+
+# PROJECT
+
+**Real Estate Developer's AI Lead-Response and Site-Visit Booking Assistant**
+
+Client: Company A, Ahmedabad
+
+Company profile:
+- Residential developer
+- 2 live projects
+- 420 apartments
+- 2 and 3 BHK
+- Price range: ₹65 lakh–₹1.2 crore
+- 60 staff
+- 11 sales executives
+- Annual bookings: ₹180–220 crore
+
+The company currently receives leads from property portals, social media ads, website enquiries and hoarding phone calls. Leads are manually managed through an inbox and Excel sheet, with telecaller follow-up happening the next morning.
+
+The product must solve the core problem:
+
+**Every enquiry should receive a useful response within minutes, be qualified automatically, and be converted into a real site-visit booking when appropriate.**
+
+---
+
+# 1. PRIMARY GOAL
+
+Build an AI lead-response and site-visit booking system that:
+
+1. Collects leads from different sources.
+2. Detects duplicate leads.
+3. Responds to buyers within minutes.
+4. Supports English, Hindi and Gujarati.
+5. Answers only from an approved fact sheet.
+6. Understands buyer requirements.
+7. Qualifies leads.
+8. Recommends relevant projects.
+9. Shows genuinely available site-visit slots.
+10. Prevents double booking.
+11. Books the visit.
+12. Sends reminders.
+13. Hands serious leads to a named sales executive.
+14. Gives the executive the complete conversation and AI summary.
+15. Provides source-level sales analytics.
+
+This must be a real working workflow, not a static chatbot demo.
+
+---
+
+# 2. CORE USER ROLES
+
+Implement two main roles:
+
+## BUYER
+
+Can:
+
+- Start conversation
+- Ask project questions
+- Select language
+- Share requirements
+- View matching projects
+- Request a salesperson
+- View available site-visit slots
+- Book a site visit
+- Receive booking confirmation
+- Receive reminder information
+
+## SALES EXECUTIVE
+
+Can:
+
+- Login
+- View assigned leads
+- View lead source
+- View lead score
+- View conversation
+- View AI summary
+- View buyer requirements
+- View site-visit booking
+- Update lead status
+- Take over conversation
+- Mark visit as completed/no-show
+- View follow-ups
+
+---
+
+# 3. IMPORTANT AI SAFETY RULE
+
+The AI must NEVER invent project information.
+
+The AI may only answer using the approved **Sales Head Fact Sheet**.
+
+If the requested information is not available in the fact sheet:
+
+> "I don't have that information available right now. I can connect you with a sales executive who can confirm it."
+
+Then offer human handoff.
+
+The AI must NOT invent:
+
+- prices
+- discounts
+- offers
+- possession dates
+- availability
+- amenities
+- project registration numbers
+- legal information
+- payment plans
+
+The AI must never quote a final price or discount.
+
+---
+
+# 4. RERA / DPDP / CONSENT SAFETY
+
+The prototype must visibly demonstrate compliance-aware design.
+
+For promotional/project information:
+
+Always display the relevant:
+
+**RERA registration number**
+
+from the approved fact sheet.
+
+Never make promotional claims outside registered/project facts.
+
+For buyer contact:
+
+Store consent status.
+
+Fields:
+
+- consentGiven
+- consentAt
+- optOut
+
+If the buyer opts out:
+
+- Do not schedule promotional follow-ups.
+- Mark the lead as opted out.
+- Respect the opt-out.
+
+Do not implement actual WhatsApp messaging.
+
+For WhatsApp, clearly mark it as:
+
+**Future integration**
+
+and show where opt-in templates would be used.
+
+Do not claim WhatsApp integration is implemented.
+
+---
+
+# 5. EXACT SCREEN COUNT
+
+Build approximately **7 polished screens**.
+
+Do not create unnecessary pages.
+
+## Screen 1 — Buyer Landing / AI Chat
+
+## Screen 2 — Lead Capture + Qualification
+
+This can be integrated into the chat experience if cleaner.
+
+## Screen 3 — Property / Project Recommendation
+
+## Screen 4 — Site Visit Slot Selection + Booking
+
+## Screen 5 — Booking Confirmation + Reminder Information
+
+## Screen 6 — Sales Executive Lead Dashboard
+
+## Screen 7 — Lead Detail / Handoff + Source Analytics
+
+An admin fact-sheet/slot editor may be implemented as a drawer/modal within the sales dashboard rather than another major screen.
+
+---
+
+# 6. SCREEN 1 — BUYER AI CHAT
+
+Create a premium mobile-first chat experience.
+
+Header:
+
+**Company A**
+
+Subtitle:
+
+**Find the right home and schedule a visit.**
+
+Language selector:
+
+- English
+- हिन्दी
+- ગુજરાતી
+
+The user can start with:
+
+> "I'm looking for a 3 BHK in Ahmedabad around ₹1 crore."
+
+AI should understand this.
+
+Quick actions:
+
+- Explore 2 BHK
+- Explore 3 BHK
+- Check my budget
+- Book a site visit
+- Talk to a person
+
+The AI should ask only useful missing questions.
+
+Example:
+
+> "I'd be happy to help. Are you looking for a home for your own use or as an investment?"
+
+Then:
+
+> "What budget would you like to stay within?"
+
+Do not ask 10 questions unnecessarily.
+
+---
+
+# 7. MULTILINGUAL AI
+
+Support:
+
+### English
+
+### Hindi
+
+### Gujarati
+
+The user can switch languages at any point.
+
+The AI should respond in the selected language.
+
+Maintain the same underlying structured lead data regardless of language.
+
+Example:
+
+Gujarati:
+
+> "તમારું બજેટ કેટલું છે?"
+
+Hindi:
+
+> "आपका बजट कितना है?"
+
+English:
+
+> "What budget would you like to stay within?"
+
+Do not translate project facts incorrectly.
+
+---
+
+# 8. LEAD DATA EXTRACTION
+
+Convert natural-language messages into structured data.
+
+Example:
+
+User:
+
+> "Mujhe Ahmedabad mein 3 BHK chahiye, budget around 1 crore hai aur agle 6 mahine mein shift karna hai."
+
+Extract:
+
+```json
+{
+  "language": "hi",
+  "location": "Ahmedabad",
+  "propertyType": "Apartment",
+  "bedrooms": 3,
+  "budgetMax": 10000000,
+  "purchaseTimeline": "0-6 months",
+  "intent": "BUY"
+}
+```
+
+Use structured AI output.
+
+Validate AI output using Zod.
+
+Do not trust raw AI JSON without validation.
+
+---
+
+# 9. LEAD QUALIFICATION
+
+Create a deterministic lead-scoring engine.
+
+Score based on:
+
+### Budget fit
+
+0–25 points
+
+### Requirement specificity
+
+0–15 points
+
+### Purchase timeline
+
+0–20 points
+
+### Site-visit intent
+
+0–20 points
+
+### Engagement
+
+0–10 points
+
+### Project match
+
+0–10 points
+
+Total:
+
+**0–100**
+
+Classification:
+
+### 0–39
+
+COLD
+
+### 40–69
+
+WARM
+
+### 70–100
+
+HOT
+
+Example:
+
+**82/100 — HOT**
+
+Reasons:
+
+- Budget matches available project
+- Specific 3 BHK requirement
+- Wants to purchase within 6 months
+- Requested site visit
+
+Do not let the AI determine the final score.
+
+The AI extracts information; deterministic business logic calculates the score.
+
+---
+
+# 10. PROJECT DATA
+
+Seed two realistic projects.
+
+Use:
+
+### Project 1
+
+2 and 3 BHK  
+₹65 lakh–₹1.2 crore
+
+### Project 2
+
+2 and 3 BHK  
+₹65 lakh–₹1.2 crore
+
+Create realistic but clearly marked DEMO project information.
+
+Include:
+
+- project name
+- location
+- BHK
+- price range
+- amenities
+- possession information
+- RERA registration number
+- address
+- location coordinates
+- description
+- available inventory
+
+Do not invent real company/project claims.
+
+Clearly label the project data as demo/sample data where appropriate.
+
+---
+
+# 11. FACT SHEET
+
+Create a Sales Head Fact Sheet stored in the database.
+
+Example structure:
+
+```text
+Project Name
+RERA Number
+Location
+BHK Types
+Registered Price Range
+Possession Information
+Amenities
+Address
+Nearby landmarks
+Contact details
+Approved FAQs
+```
+
+AI retrieval must use this fact sheet.
+
+Create a fact-sheet editor for sales/admin users.
+
+Fields should be editable.
+
+When the fact sheet changes, future AI answers should use the updated information.
+
+---
+
+# 12. PROPERTY RECOMMENDATION
+
+After collecting requirements, show matching projects.
+
+Example:
+
+### Project 1
+
+**3 BHK**
+
+₹92L–₹1.15Cr
+
+Ahmedabad
+
+**92% Match**
+
+Why:
+
+✓ Budget compatible  
+✓ 3 BHK available  
+✓ Preferred location  
+✓ Timeline compatible
+
+Use deterministic filtering/matching.
+
+Do not let AI invent project matches.
+
+---
+
+# 13. SITE-VISIT BOOKING
+
+This is one of the most important parts of the challenge.
+
+The AI must have access to a **booking tool**.
+
+Conceptually:
+
+```text
+check_available_slots(projectId, date)
+```
+
+and:
+
+```text
+book_site_visit(leadId, projectId, slotId)
+```
+
+The AI should never directly write a booking without backend validation.
+
+---
+
+# 14. REAL SLOT AVAILABILITY
+
+Create a slot system.
+
+Example:
+
+Date:
+
+Saturday
+
+Available:
+
+10:00 AM  
+11:30 AM  
+1:00 PM  
+3:00 PM  
+4:30 PM
+
+Each slot has:
+
+- id
+- projectId
+- date
+- startTime
+- endTime
+- capacity
+- bookedCount
+- status
+
+Booking must verify:
+
+```text
+capacity > bookedCount
+```
+
+before confirming.
+
+---
+
+# 15. DOUBLE-BOOKING PROTECTION
+
+This is critical.
+
+Two users must not be able to book the same final available slot simultaneously.
+
+Use database-level protection/transaction logic.
+
+Booking process:
+
+1. Begin transaction.
+2. Lock/check slot.
+3. Verify availability.
+4. Create site visit.
+5. Increment booking count.
+6. Commit transaction.
+
+If another booking takes the slot first:
+
+Return:
+
+> "That slot was just booked. Here are the next available times."
+
+Never show a successful booking when the database rejected it.
+
+---
+
+# 16. BOOKING FLOW
+
+Buyer selects:
+
+**Project**
+
+↓
+
+**Date**
+
+↓
+
+**Available slot**
+
+↓
+
+**Name**
+
+↓
+
+**Phone**
+
+↓
+
+**Consent**
+
+↓
+
+**Confirm Visit**
+
+Show confirmation:
+
+### Site Visit Confirmed
+
+Project 1
+
+Saturday, 15 November
+
+11:30 AM
+
+Location:
+
+Ahmedabad
+
+Button:
+
+**Open Location**
+
+Use a map/location-pin link or map component.
+
+---
+
+# 17. REMINDERS
+
+Create reminder records for:
+
+### 1 day before
+
+### 2 hours before
+
+Do not send real SMS/WhatsApp unless a real provider is configured.
+
+For the prototype:
+
+Display:
+
+**Reminder scheduled**
+
+and create reminder records/jobs.
+
+Example:
+
+> Reminder scheduled for 1 day before your visit.
+
+> Reminder scheduled for 2 hours before your visit.
+
+Implement background-job architecture where practical.
+
+---
+
+# 18. HUMAN HANDOFF
+
+The buyer can type:
+
+> "I want to talk to a person."
+
+or click:
+
+**Talk to a salesperson**
+
+The AI must immediately create a handoff.
+
+Assign a named salesperson.
+
+Example:
+
+**Your sales executive: Priya Shah**
+
+Show:
+
+**Priya has received your enquiry and conversation summary.**
+
+---
+
+# 19. AI HANDOFF SUMMARY
+
+Generate a concise structured summary:
+
+```text
+Lead: Hardik Patel
+
+Interested in:
+3 BHK
+
+Budget:
+₹90L–₹1.1Cr
+
+Preferred location:
+Ahmedabad
+
+Purchase timeline:
+0–6 months
+
+Lead score:
+84 — HOT
+
+Site visit:
+Requested
+
+Recommended project:
+Project 1
+
+Important context:
+Buyer wants weekend visit and prefers a home close to major road connectivity.
+```
+
+Sales executive must see the complete chat history underneath the summary.
+
+---
+
+# 20. LEAD LIST
+
+Sales dashboard must have a single lead list.
+
+Columns:
+
+- Lead ID
+- Name
+- Source
+- Project
+- Requirement
+- Score
+- Temperature
+- Visit Status
+- Assigned Executive
+- Created
+- Last Activity
+
+Filters:
+
+- Source
+- Project
+- Temperature
+- Visit status
+- Assigned executive
+- Date
+
+Search:
+
+- Name
+- phone
+- Lead ID
+
+---
+
+# 21. DUPLICATE DETECTION
+
+This is a mandatory feature.
+
+Detect duplicate leads using:
+
+- phone number
+- email
+- normalized phone number
+- optional name similarity
+
+When duplicate detected:
+
+Show:
+
+**Possible duplicate lead**
+
+Example:
+
+```text
+LD-58210
+Hardik Patel
+Property Portal
+```
+
+matches:
+
+```text
+LD-58491
+Hardik Patel
+Website
+```
+
+Show:
+
+**92% match**
+
+Allow sales executive to:
+
+- Merge
+- Keep separate
+
+When merged:
+
+- Preserve source information
+- Preserve conversation history
+- Preserve site visit history
+- Keep one canonical lead ID
+
+Do not silently delete data.
+
+---
+
+# 22. SOURCE TAGGING
+
+Every lead must have a source.
+
+Possible sources:
+
+- PROPERTY_PORTAL
+- SOCIAL_MEDIA
+- WEBSITE
+- HOARDING
+- REFERRAL
+- OTHER
+
+Source must be stored in database.
+
+Display source badge in CRM.
+
+---
+
+# 23. SOURCE DASHBOARD
+
+Create analytics showing:
+
+### Leads by source
+
+### Median response time
+
+### Site visits
+
+### Show-up rate
+
+### Cost per visit
+
+Use these sample monthly spend values:
+
+Total:
+
+₹30 lakh/month
+
+Lead volume:
+
+3,000/month
+
+Approximate CPL:
+
+₹1,000
+
+Calculate metrics from stored data rather than hard-coding final values.
+
+Show:
+
+| Source | Leads | Visits | Show-up | Cost | Cost/Visit |
+|---|---:|---:|---:|---:|---:|
+
+Use charts.
+
+---
+
+# 24. KEY BUSINESS METRICS
+
+Dashboard cards:
+
+### Median First Response
+
+Target:
+
+< 5 min
+
+### Leads Not Reached in 48h
+
+Target:
+
+< 5%
+
+### Lead → Site Visit
+
+Current baseline:
+
+6%
+
+Target:
+
+8%
+
+### Cost per Visit
+
+Calculated dynamically.
+
+### Total Leads
+
+### Hot Leads
+
+### Site Visits
+
+### Show-up Rate
+
+---
+
+# 25. SAMPLE DATA
+
+Seed the exact sample leads:
+
+### LD-58210
+
+Hardik Patel
+
+Source:
+
+Property portal
+
+Project:
+
+Project 1
+
+Wants:
+
+3 BHK
+
+Visit:
+
+Booked
+
+2026-11-01 11:00
+
+### LD-58211
+
+Nidhi Shah
+
+Source:
+
+Social media ad
+
+Project:
+
+Project 2
+
+Wants:
+
+2 BHK
+
+Visit:
+
+Not booked
+
+### LD-58224
+
+Kavita Joshi
+
+Source:
+
+Hoarding call
+
+Project:
+
+Project 2
+
+Wants:
+
+2 BHK
+
+Visit:
+
+Visited
+
+Add more realistic demo leads so the dashboard looks meaningful.
+
+Clearly mark the dataset as demo data.
+
+---
+
+# 26. SALES EXECUTIVE DASHBOARD
+
+The sales executive should see:
+
+### Today's leads
+
+### Hot leads
+
+### Upcoming site visits
+
+### Pending follow-ups
+
+### Recent handoffs
+
+Then the lead table.
+
+Keep the dashboard minimal.
+
+Do not put irrelevant widgets on screen.
+
+---
+
+# 27. LEAD DETAIL
+
+Clicking a lead opens a detailed view.
+
+Show:
+
+### Lead information
+
+### Source
+
+### AI score
+
+### AI qualification reasons
+
+### Buyer requirements
+
+### Recommended project
+
+### Complete conversation
+
+### AI handoff summary
+
+### Site visit
+
+### Reminder status
+
+### Activity timeline
+
+Buttons:
+
+**Take over**
+
+**Call buyer**
+
+**Reschedule visit**
+
+**Mark visited**
+
+**Mark no-show**
+
+---
+
+# 28. SALES EXECUTIVE HANDOFF
+
+When AI hands off:
+
+Set:
+
+```text
+lead.status = HANDED_OFF
+```
+
+Assign:
+
+```text
+assignedExecutiveId
+```
+
+Create activity:
+
+```text
+AI_HANDOFF
+```
+
+Store:
+
+- summary
+- reason
+- timestamp
+
+---
+
+# 29. ADMIN FACT SHEET EDITOR
+
+Inside the dashboard create:
+
+**Fact Sheet**
+
+Sales head can edit:
+
+- Project information
+- RERA number
+- approved pricing
+- amenities
+- FAQs
+- location
+- contact information
+
+Include:
+
+**Save Changes**
+
+After save, AI retrieval should use the updated version.
+
+---
+
+# 30. ADMIN SLOT EDITOR
+
+Create a simple slot management UI.
+
+Sales/admin can:
+
+- Add date
+- Add time
+- Set capacity
+- Disable slot
+- View bookings
+
+Example:
+
+```text
+15 Nov 2026
+
+10:00 AM — 2/4 booked
+11:30 AM — 4/4 FULL
+1:00 PM — 1/4 booked
+3:00 PM — 0/4 booked
+```
+
+The buyer must only see slots that are genuinely available.
+
+---
+
+# 31. DESIGN
+
+Design is extremely important.
+
+The client explicitly values:
+
+- minimal design
+- white space
+- restrained palette
+- clear typography
+- calm premium experience
+
+The product should feel like a **₹65 lakh–₹1.2 crore residential property brand**.
+
+Do not use:
+
+- excessive gradients
+- neon colors
+- clutter
+- excessive glassmorphism
+- huge dashboards
+- unnecessary animations
+- decorative components without purpose
+
+Use:
+
+- white/neutral backgrounds
+- one restrained accent color
+- clean cards
+- subtle borders
+- premium typography
+- generous spacing
+- clear status badges
+- subtle motion
+
+The buyer chat should feel calm and trustworthy.
+
+---
+
+# 32. MOBILE-FIRST CHAT
+
+The buyer will mostly use a phone.
+
+Optimize the buyer flow for mobile.
+
+Booking should require minimal steps.
+
+Do not make the buyer navigate through complex dashboards.
+
+---
+
+# 33. ACCESSIBILITY
+
+Implement:
+
+- semantic HTML
+- keyboard navigation
+- proper labels
+- sufficient contrast
+- accessible buttons
+- focus states
+- screen-reader-friendly form controls
+
+---
+
+# 34. TECH STACK
+
+Use:
+
+## Frontend
+
+React
+
+TypeScript
+
+Vite
+
+Tailwind CSS
+
+shadcn/ui
+
+React Router
+
+TanStack Query
+
+Zod
+
+React Hook Form
+
+Lucide icons
+
+Recharts
+
+## Backend
+
+Node.js
+
+Express
+
+TypeScript
+
+Prisma
+
+REST APIs
+
+Zod
+
+## Database
+
+PostgreSQL
+
+## AI
+
+Gemini or OpenAI-compatible API
+
+Create an AI provider abstraction.
+
+Never expose API keys to frontend.
+
+## Optional
+
+Redis + BullMQ for reminders.
+
+---
+
+# 35. PROJECT STRUCTURE
+
+Use a clean structure.
+
+Example:
+
+```text
+/apps
+  /web
+    /src
+      /components
+      /pages
+      /features
+      /hooks
+      /lib
+      /api
+      /types
+
+  /api
+    /src
+      /routes
+      /controllers
+      /services
+      /ai
+      /repositories
+      /middleware
+      /validators
+      /utils
+
+/packages
+  /shared
+```
+
+Keep business logic out of React components.
+
+Keep AI logic separate from controllers.
+
+Keep database operations separate from routes.
+
+---
+
+# 36. AI ARCHITECTURE
+
+Use:
+
+**User Message**
+
+↓
+
+**Language Detection**
+
+↓
+
+**Intent Detection**
+
+↓
+
+**Fact Sheet Retrieval**
+
+↓
+
+**Requirement Extraction**
+
+↓
+
+**Business Logic**
+
+↓
+
+**AI Response**
+
+↓
+
+**Tool Call if necessary**
+
+Example tools:
+
+```text
+get_project_facts(projectId)
+
+find_matching_projects(requirements)
+
+check_available_slots(projectId, date)
+
+book_site_visit(leadId, projectId, slotId)
+
+handoff_to_sales(leadId, reason)
+```
+
+AI cannot directly access the database.
+
+The backend executes validated tool calls.
+
+---
+
+# 37. AI BOOKING TOOL
+
+When buyer says:
+
+> "Book me for Saturday afternoon."
+
+AI should:
+
+1. Determine date.
+2. Determine preferred time window.
+3. Call availability tool.
+4. Return available slots.
+5. Ask buyer to choose.
+6. Call booking tool.
+7. Backend validates availability.
+8. Confirm booking.
+
+Never allow AI to assume a slot is available.
+
+---
+
+# 38. AI FALLBACK
+
+If AI API is unavailable:
+
+Show:
+
+> "I'm having trouble processing that request right now. I can connect you with a sales executive."
+
+The core CRM and booking system should continue working.
+
+---
+
+# 39. API ENDPOINTS
+
+Implement APIs such as:
+
+```text
+POST /api/leads
+
+GET /api/leads
+
+GET /api/leads/:id
+
+POST /api/leads/check-duplicate
+
+POST /api/leads/:id/merge
+
+GET /api/projects
+
+GET /api/projects/:id
+
+POST /api/chat/message
+
+POST /api/ai/extract-requirements
+
+POST /api/ai/handoff
+
+GET /api/slots
+
+GET /api/slots/available
+
+POST /api/site-visits
+
+PATCH /api/site-visits/:id
+
+POST /api/site-visits/:id/cancel
+
+POST /api/site-visits/:id/reschedule
+
+GET /api/dashboard/metrics
+
+GET /api/dashboard/source-performance
+
+GET /api/fact-sheet
+
+PATCH /api/fact-sheet
+
+GET /api/admin/slots
+
+POST /api/admin/slots
+```
+
+---
+
+# 40. DATABASE MODELS
+
+At minimum:
+
+```text
+User
+Lead
+LeadSource
+Project
+FactSheet
+Conversation
+Message
+SiteVisit
+VisitSlot
+Reminder
+Activity
+Consent
+```
+
+Use proper relations.
+
+Add indexes to:
+
+- phone
+- email
+- source
+- lead status
+- createdAt
+- projectId
+- slot date
+
+---
+
+# 41. CONSENT
+
+Before booking/contacting the buyer:
+
+Display:
+
+> "I agree to be contacted regarding my enquiry and site visit."
+
+Store:
+
+- consent
+- timestamp
+- source
+- IP/device metadata only if appropriate and legally justified
+
+If user opts out:
+
+Set:
+
+```text
+optOut = true
+```
+
+Prevent promotional follow-up.
+
+---
+
+# 42. REMINDER SYSTEM
+
+Create reminder jobs:
+
+```text
+visit time - 24 hours
+visit time - 2 hours
+```
+
+For demo mode:
+
+Show reminder status.
+
+Example:
+
+```text
+✓ 24-hour reminder scheduled
+
+✓ 2-hour reminder scheduled
+```
+
+Do not pretend an SMS/WhatsApp was actually delivered.
+
+---
+
+# 43. TESTING
+
+Write tests for the hardest logic.
+
+At minimum:
+
+### Duplicate detection
+
+### Lead scoring
+
+### Project matching
+
+### Slot availability
+
+### Double-booking prevention
+
+### Booking transaction
+
+### Consent/opt-out
+
+### AI output validation
+
+Most importantly:
+
+**Test concurrent booking attempts for the same slot.**
+
+Only one should succeed when capacity is one.
+
+---
+
+# 44. DEMO EXPERIENCE
+
+The recruiter should understand the product in under 30 seconds.
+
+Create a demo entry point:
+
+**Try Buyer Assistant**
+
+Then automatically guide through:
+
+```text
+Buyer enquiry
+↓
+AI qualification
+↓
+Project recommendation
+↓
+Available slots
+↓
+Booking
+↓
+Sales handoff
+↓
+CRM
+```
+
+---
+
+# 45. PRIMARY DEMO SCENARIO
+
+Use this exact scenario:
+
+Buyer:
+
+> "Mujhe Ahmedabad mein 3 BHK chahiye. Budget 1 crore ke aas paas hai. Main is weekend site visit kar sakta hoon."
+
+System should:
+
+1. Detect Hindi.
+2. Extract:
+   - Ahmedabad
+   - 3 BHK
+   - ₹1 Cr budget
+   - weekend availability
+3. Match projects.
+4. Ask any missing critical question.
+5. Show suitable project.
+6. Show real available weekend slots.
+7. Buyer selects slot.
+8. Booking succeeds.
+9. Reminder is scheduled.
+10. Lead score updates.
+11. Lead appears in sales dashboard.
+12. Sales executive sees AI summary.
+13. Source is preserved.
+
+---
+
+# 46. SECOND DEMO SCENARIO
+
+Buyer:
+
+> "I want the cheapest 2BHK. What is the final price including everything?"
+
+AI must NOT invent the final price.
+
+It should say:
+
+> "I can share the registered project pricing available in my fact sheet, but I cannot provide a final all-inclusive price or discount. A sales executive can confirm the applicable charges."
+
+Offer:
+
+**Talk to a salesperson**
+
+---
+
+# 47. THIRD DEMO SCENARIO
+
+Buyer:
+
+> "Gujarati ma vaat karo."
+
+AI switches to Gujarati.
+
+Continue the same conversation context.
+
+Do not reset the lead.
+
+---
+
+# 48. FOURTH DEMO SCENARIO
+
+Buyer:
+
+> "Can I speak to someone?"
+
+Immediately hand off.
+
+Assign named sales executive.
+
+Display:
+
+**Priya Shah — Sales Executive**
+
+AI summary:
+
+```text
+3 BHK
+₹90L–₹1.1Cr
+Ahmedabad
+Weekend visit requested
+HOT lead
+```
+
+---
+
+# 49. README
+
+Create a professional README.
+
+Include:
+
+## Problem
+
+Explain the lost-lead problem.
+
+## Solution
+
+Explain how the AI assistant reduces response time and improves site-visit conversion.
+
+## Key Features
+
+- Multilingual AI
+- Fact-sheet grounded answers
+- Lead qualification
+- Duplicate detection
+- Project matching
+- Real slot booking
+- Double-booking protection
+- Human handoff
+- Reminders
+- Source analytics
+- Consent handling
+
+## Architecture
+
+Show:
+
+```text
+Buyer
+ ↓
+React
+ ↓
+Express API
+ ↓
+AI Agent
+ ↓
+Fact Sheet
+ ↓
+Business Logic
+ ↓
+PostgreSQL
+ ↓
+Booking / CRM
+```
+
+## AI Safety
+
+Explain why AI cannot invent facts.
+
+## Booking Architecture
+
+Explain transaction/locking strategy.
+
+## Compliance Considerations
+
+Explain RERA/DPDP-aware design without claiming legal certification.
+
+## Setup
+
+Give exact commands.
+
+## Environment Variables
+
+Provide `.env.example`.
+
+## Testing
+
+Provide commands.
+
+## Deployment
+
+Provide deployment instructions.
+
+## Demo
+
+Include the deployed application URL.
+
+---
+
+# 50. DEPLOYMENT
+
+Prepare for:
+
+Frontend:
+
+**Vercel**
+
+Backend:
+
+**Render**
+
+Database:
+
+**Neon / Supabase PostgreSQL**
+
+Optional Redis:
+
+**Upstash**
+
+Use environment variables.
+
+No localhost URLs in production.
+
+Configure CORS correctly.
+
+---
+
+# 51. IMPORTANT
+
+Do NOT build:
+
+- full CRM replacement
+- payment system
+- booking payment
+- allotment letters
+- outbound voice calling
+- real WhatsApp integration
+
+These are out of scope.
+
+Keep the project focused.
+
+---
+
+# 52. SUCCESS CRITERIA
+
+The product should demonstrate how it can move toward:
+
+**Median first response: <5 minutes**
+
+**Leads not reached in 48 hours: <5%**
+
+**Lead-to-visit: 6% → 8%**
+
+Do not claim these targets have been achieved by the prototype.
+
+Instead display them as:
+
+**Client Success Targets**
+
+---
+
+# 53. FINAL QUALITY CHECK
+
+Before finishing, verify:
+
+- Buyer can start a conversation.
+- English works.
+- Hindi works.
+- Gujarati works.
+- AI extracts requirements.
+- AI only uses fact-sheet information.
+- AI refuses unsupported facts safely.
+- Lead is created.
+- Duplicate detection works.
+- Lead score works.
+- Project matching works.
+- Available slots come from database.
+- Fully booked slots are hidden.
+- Double booking is prevented.
+- Site visit is saved.
+- Reminder records are created.
+- Handoff assigns a salesperson.
+- AI summary is generated.
+- Sales executive sees conversation.
+- Source is preserved.
+- Dashboard metrics are calculated from database.
+- Fact sheet can be edited.
+- Visit slots can be edited.
+- Consent is recorded.
+- Opt-out is respected.
+- No API key is exposed.
+- No fake production integration is claimed.
+- Mobile chat is polished.
+- Desktop CRM is polished.
+- Empty states work.
+- Loading states work.
+- Error states work.
+- TypeScript has no errors.
+- Critical tests pass.
+
+---
+
+# 54. BUILD IN THIS ORDER
+
+Phase 1:
+Project setup.
+
+Phase 2:
+Database + Prisma.
+
+Phase 3:
+Seed projects, fact sheet, users, leads and slots.
+
+Phase 4:
+Buyer chat UI.
+
+Phase 5:
+AI extraction + fact-sheet retrieval.
+
+Phase 6:
+Lead scoring + duplicate detection.
+
+Phase 7:
+Project matching.
+
+Phase 8:
+Real slot availability.
+
+Phase 9:
+Transactional site-visit booking.
+
+Phase 10:
+Reminder system.
+
+Phase 11:
+Human handoff.
+
+Phase 12:
+Sales dashboard.
+
+Phase 13:
+Source analytics.
+
+Phase 14:
+Fact-sheet + slot editor.
+
+Phase 15:
+Mobile/desktop polish.
+
+Phase 16:
+Testing.
+
+Phase 17:
+README + deployment.
+
+---
+
+# 55. START IMPLEMENTATION
+
+First inspect the existing repository.
+
+Do not overwrite useful existing code.
+
+If the repository is empty, initialize the project.
+
+Build the application incrementally.
+
+After every major phase:
+
+1. Run TypeScript checks.
+2. Run linting.
+3. Run tests.
+4. Fix errors.
+5. Continue.
+
+Do not merely generate a design mockup.
+
+Implement the real database-backed workflow.
+
+Do not claim features are complete unless they actually work.
+
+At the end, provide:
+
+- Project structure
+- Setup commands
+- Environment variables
+- Database migration command
+- Seed command
+- Test command
+- Development command
+- Deployment instructions
+- Demo credentials
+- Main API endpoints
+- Architecture explanation
+- Completed features
+- Known limitations
+- Demo walkthrough
+
+The final application must be a polished, responsive, minimal, premium-looking **AI Lead-Response and Site-Visit Booking Assistant** that directly addresses the client's stated problem and required end-to-end slice.

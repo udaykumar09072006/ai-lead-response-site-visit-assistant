@@ -1,0 +1,6 @@
+{
+  "name": "Company A · AI Lead-Response & Site-Visit Assistant",
+  "description": "Multilingual AI lead-response, qualification, fact-sheet grounded property recommendation, and site-visit booking system for Company A, Ahmedabad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

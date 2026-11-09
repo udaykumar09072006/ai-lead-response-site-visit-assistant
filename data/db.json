@@ -1,0 +1,1828 @@
+{
+  "users": [
+    {
+      "id": "exec-1",
+      "name": "Priya Shah",
+      "email": "priya.shah@companya-ahmedabad.com",
+      "phone": "+91 98250 12345",
+      "role": "SALES_EXECUTIVE",
+      "title": "Senior Property Consultant"
+    },
+    {
+      "id": "exec-2",
+      "name": "Rahul Mehta",
+      "email": "rahul.mehta@companya-ahmedabad.com",
+      "phone": "+91 98250 67890",
+      "role": "SALES_EXECUTIVE",
+      "title": "Relationship Manager"
+    },
+    {
+      "id": "exec-3",
+      "name": "Ananya Trivedi",
+      "email": "ananya.trivedi@companya-ahmedabad.com",
+      "phone": "+91 98250 54321",
+      "role": "SALES_EXECUTIVE",
+      "title": "Site Visit Specialist"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "name": "Aura Elysium",
+      "tagline": "Modern High-Rise Living on Ambli-Bopal Road",
+      "location": "Ahmedabad",
+      "subLocation": "Ambli-Bopal Road",
+      "bhkTypes": [
+        "2 BHK",
+        "3 BHK"
+      ],
+      "minPrice": 6800000,
+      "maxPrice": 11800000,
+      "priceRangeDisplay": "₹68 Lakh – ₹1.18 Crore",
+      "possessionDate": "December 2026",
+      "reraNumber": "PR/GJ/AHMEDABAD/AUDA/MAA10422/2024",
+      "address": "Survey No. 420, Opp. Iscon Flower, Ambli-Bopal Road, Ahmedabad, Gujarat 380058",
+      "coordinates": {
+        "lat": 23.0338,
+        "lng": 72.4867
+      },
+      "description": "Aura Elysium offers 240 thoughtfully designed 2 & 3 BHK luxury residences with 3-side open ventilation, 11-ft clear ceiling heights, and 30,000 sq.ft of curated amenities.",
+      "totalUnits": 240,
+      "availableUnits": 68,
+      "amenities": [
+        "Infinity Lap Pool & Kid Pool",
+        "Double-height Clubhouse & Lounge",
+        "EV Charging Stations (dedicated slot per 3BHK)",
+        "Badminton & Squash Court",
+        "Senior Citizen Reflexology Deck",
+        "3-Tier Security with Biometric Access",
+        "Yoga & Meditation Pavilion"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "proj-2",
+      "name": "The Serene Botanica",
+      "tagline": "Biophilic 2 & 3 BHK Eco-Residences in Shela",
+      "location": "Ahmedabad",
+      "subLocation": "Shela / South Bopal",
+      "bhkTypes": [
+        "2 BHK",
+        "3 BHK"
+      ],
+      "minPrice": 6500000,
+      "maxPrice": 9800000,
+      "priceRangeDisplay": "₹65 Lakh – ₹98 Lakh",
+      "possessionDate": "March 2027",
+      "reraNumber": "PR/GJ/AHMEDABAD/AUDA/MAA09918/2023",
+      "address": "Near Club O7 Road, South Bopal Ext., Shela, Ahmedabad, Gujarat 380058",
+      "coordinates": {
+        "lat": 23.0084,
+        "lng": 72.4645
+      },
+      "description": "The Serene Botanica features 180 residences nestled amidst 70% open green landscapes, landscaped courtyard gardens, banquet lawns, and quiet work-from-home pods.",
+      "totalUnits": 180,
+      "availableUnits": 42,
+      "amenities": [
+        "70% Landscaped Open Garden & Forest Trail",
+        "Biophilic Clubhouse with Banquet Hall",
+        "Gymnasium & Aerobics Studio",
+        "Children Play Sanctuary",
+        "Solar Power for Common Areas",
+        "Rainwater Harvesting & Water Softener Plant",
+        "Co-Working Pods with High-Speed Fiber"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "factSheet": {
+    "id": "factsheet-companya-01",
+    "projectId": "all",
+    "projectName": "Company A Verified Residential Portfolio (Ahmedabad)",
+    "reraNumber": "Aura Elysium: PR/GJ/AHMEDABAD/AUDA/MAA10422/2024 | The Serene Botanica: PR/GJ/AHMEDABAD/AUDA/MAA09918/2023",
+    "location": "Ambli-Bopal Road & Shela, West Ahmedabad, Gujarat",
+    "bhkTypes": "2 BHK (1,150–1,350 sq.ft) and 3 BHK (1,680–1,940 sq.ft)",
+    "registeredPriceRange": "₹65 Lakh – ₹1.18 Crore (Registered RERA base rates)",
+    "possessionInformation": "Aura Elysium: December 2026 | The Serene Botanica: March 2027",
+    "amenities": [
+      "Clubhouse, Infinity/Lap Swimming Pool, EV Charging Infrastructure, Dedicated Kids Play Sanctuary",
+      "Senior Citizen Reflexology Deck, 24/7 3-Tier Security, Landscaped Gardens, Solar Power for Commons"
+    ],
+    "address": "Company A Experience Centre: 4th Floor, Signature Tower, SG Highway, Ahmedabad 380054",
+    "nearbyLandmarks": [
+      "5 minutes from SG Highway & SP Ring Road junction",
+      "8 minutes from Shalby Hospital & Zydus Hospital",
+      "Nearby Schools: DPS Bopal, Ahmedabad International School, Cosmos Castle"
+    ],
+    "contactDetails": "Sales Desk: +91 79 4000 8800 | Email: sales@companya-ahmedabad.com",
+    "approvedFaqs": [
+      {
+        "question": "What are the price ranges for 2 BHK and 3 BHK?",
+        "answer": "Our approved RERA price band starts at ₹65 Lakh for 2 BHK at The Serene Botanica, up to ₹1.18 Crore for premium 3 BHK residences at Aura Elysium. Final pricing depends on floor rise, view orientation, and registration taxes verified with a sales executive."
+      },
+      {
+        "question": "Are home loans approved by major banks?",
+        "answer": "Yes, projects are pre-approved by SBI, HDFC Bank, ICICI Bank, and Axis Bank with competitive home loan rates and transparent documentation."
+      },
+      {
+        "question": "What is the booking and payment schedule?",
+        "answer": "Standard RERA construction-linked milestone plan applies (10% on booking, staggered with slab completion). Exact payment terms are formalized by the sales head."
+      },
+      {
+        "question": "Can I visit the sample flat on site?",
+        "answer": "Yes! Fully furnished 2 BHK and 3 BHK experiential show homes are open on site Tuesday through Sunday between 10:00 AM and 6:30 PM. Advance booking is required to reserve an executive walkthrough."
+      }
+    ],
+    "explicitRestrictions": [
+      "NEVER invent or guarantee discounts, cashbacks, festival waivers, or unauthorized pricing.",
+      "NEVER quote all-inclusive final on-road figures; clarify that stamp duty, GST, and maintenance are finalized with the sales team.",
+      "NEVER promise possession earlier than registered dates (Dec 2026 for Aura Elysium, March 2027 for The Serene Botanica).",
+      "Always cite the RERA registration number when discussing project details.",
+      "If unapproved questions arise, immediately offer human handoff to a sales executive."
+    ],
+    "updatedAt": "2026-11-09T13:00:23.150Z"
+  },
+  "slots": [
+    {
+      "id": "slot-sat-1000-ae",
+      "projectId": "proj-1",
+      "date": "2026-11-14",
+      "dayLabel": "Saturday, 14 Nov",
+      "startTime": "10:00 AM",
+      "endTime": "11:15 AM",
+      "capacity": 4,
+      "bookedCount": 2,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "slot-sat-1130-ae",
+      "projectId": "proj-1",
+      "date": "2026-11-14",
+      "dayLabel": "Saturday, 14 Nov",
+      "startTime": "11:30 AM",
+      "endTime": "12:45 PM",
+      "capacity": 4,
+      "bookedCount": 3,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "slot-sat-1300-ae",
+      "projectId": "proj-1",
+      "date": "2026-11-14",
+      "dayLabel": "Saturday, 14 Nov",
+      "startTime": "01:00 PM",
+      "endTime": "02:15 PM",
+      "capacity": 4,
+      "bookedCount": 4,
+      "status": "FULL"
+    },
+    {
+      "id": "slot-sat-1500-ae",
+      "projectId": "proj-1",
+      "date": "2026-11-14",
+      "dayLabel": "Saturday, 14 Nov",
+      "startTime": "03:00 PM",
+      "endTime": "04:15 PM",
+      "capacity": 4,
+      "bookedCount": 1,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "slot-sat-1630-ae",
+      "projectId": "proj-1",
+      "date": "2026-11-14",
+      "dayLabel": "Saturday, 14 Nov",
+      "startTime": "04:30 PM",
+      "endTime": "05:45 PM",
+      "capacity": 4,
+      "bookedCount": 0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "slot-sun-1000-ae",
+      "projectId": "proj-1",
+      "date": "2026-11-15",
+      "dayLabel": "Sunday, 15 Nov",
+      "startTime": "10:00 AM",
+      "endTime": "11:15 AM",
+      "capacity": 4,
+      "bookedCount": 1,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "slot-sun-1130-ae",
+      "projectId": "proj-1",
+      "date": "2026-11-15",
+      "dayLabel": "Sunday, 15 Nov",
+      "startTime": "11:30 AM",
+      "endTime": "12:45 PM",
+      "capacity": 4,
+      "bookedCount": 2,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "slot-sun-1600-ae",
+      "projectId": "proj-1",
+      "date": "2026-11-15",
+      "dayLabel": "Sunday, 15 Nov",
+      "startTime": "04:00 PM",
+      "endTime": "05:15 PM",
+      "capacity": 4,
+      "bookedCount": 0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "slot-sat-1000-sb",
+      "projectId": "proj-2",
+      "date": "2026-11-14",
+      "dayLabel": "Saturday, 14 Nov",
+      "startTime": "10:00 AM",
+      "endTime": "11:15 AM",
+      "capacity": 4,
+      "bookedCount": 0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "slot-sat-1130-sb",
+      "projectId": "proj-2",
+      "date": "2026-11-14",
+      "dayLabel": "Saturday, 14 Nov",
+      "startTime": "11:30 AM",
+      "endTime": "12:45 PM",
+      "capacity": 4,
+      "bookedCount": 2,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "slot-sat-1500-sb",
+      "projectId": "proj-2",
+      "date": "2026-11-14",
+      "dayLabel": "Saturday, 14 Nov",
+      "startTime": "03:00 PM",
+      "endTime": "04:15 PM",
+      "capacity": 4,
+      "bookedCount": 1,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "slot-sat-1630-sb",
+      "projectId": "proj-2",
+      "date": "2026-11-14",
+      "dayLabel": "Saturday, 14 Nov",
+      "startTime": "04:30 PM",
+      "endTime": "05:45 PM",
+      "capacity": 4,
+      "bookedCount": 0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "slot-sun-1030-sb",
+      "projectId": "proj-2",
+      "date": "2026-11-15",
+      "dayLabel": "Sunday, 15 Nov",
+      "startTime": "10:30 AM",
+      "endTime": "11:45 AM",
+      "capacity": 4,
+      "bookedCount": 1,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "slot-sun-1530-sb",
+      "projectId": "proj-2",
+      "date": "2026-11-15",
+      "dayLabel": "Sunday, 15 Nov",
+      "startTime": "03:30 PM",
+      "endTime": "04:45 PM",
+      "capacity": 4,
+      "bookedCount": 0,
+      "status": "AVAILABLE"
+    },
+    {
+      "id": "slot-1794229223165-7p6r",
+      "projectId": "proj-1",
+      "date": "2026-11-28",
+      "dayLabel": "Saturday, 28 Nov",
+      "startTime": "02:00 PM",
+      "endTime": "03:15 PM",
+      "capacity": 1,
+      "bookedCount": 1,
+      "status": "FULL"
+    },
+    {
+      "id": "slot-1794229223166-0v5w",
+      "projectId": "proj-1",
+      "date": "2026-11-29",
+      "dayLabel": "Sunday, 29 Nov",
+      "startTime": "11:00 AM",
+      "endTime": "12:15 PM",
+      "capacity": 1,
+      "bookedCount": 1,
+      "status": "FULL"
+    },
+    {
+      "id": "slot-1794229235436-562a",
+      "projectId": "proj-1",
+      "date": "2026-11-28",
+      "dayLabel": "Saturday, 28 Nov",
+      "startTime": "02:00 PM",
+      "endTime": "03:15 PM",
+      "capacity": 1,
+      "bookedCount": 1,
+      "status": "FULL"
+    },
+    {
+      "id": "slot-1794229235437-ep4r",
+      "projectId": "proj-1",
+      "date": "2026-11-29",
+      "dayLabel": "Sunday, 29 Nov",
+      "startTime": "11:00 AM",
+      "endTime": "12:15 PM",
+      "capacity": 1,
+      "bookedCount": 1,
+      "status": "FULL"
+    },
+    {
+      "id": "slot-1794229579527-tnsq",
+      "projectId": "proj-1",
+      "date": "2026-11-28",
+      "dayLabel": "Saturday, 28 Nov",
+      "startTime": "02:00 PM",
+      "endTime": "03:15 PM",
+      "capacity": 1,
+      "bookedCount": 1,
+      "status": "FULL"
+    },
+    {
+      "id": "slot-1794229579534-dxjs",
+      "projectId": "proj-1",
+      "date": "2026-11-29",
+      "dayLabel": "Sunday, 29 Nov",
+      "startTime": "11:00 AM",
+      "endTime": "12:15 PM",
+      "capacity": 1,
+      "bookedCount": 1,
+      "status": "FULL"
+    },
+    {
+      "id": "slot-1794235250408-np4r",
+      "projectId": "proj-1",
+      "date": "2026-11-28",
+      "dayLabel": "Saturday, 28 Nov",
+      "startTime": "02:00 PM",
+      "endTime": "03:15 PM",
+      "capacity": 1,
+      "bookedCount": 1,
+      "status": "FULL"
+    },
+    {
+      "id": "slot-1794235250410-mad9",
+      "projectId": "proj-1",
+      "date": "2026-11-29",
+      "dayLabel": "Sunday, 29 Nov",
+      "startTime": "11:00 AM",
+      "endTime": "12:15 PM",
+      "capacity": 1,
+      "bookedCount": 1,
+      "status": "FULL"
+    },
+    {
+      "id": "slot-1794242772313-jiig",
+      "projectId": "proj-1",
+      "date": "2026-11-28",
+      "dayLabel": "Saturday, 28 Nov",
+      "startTime": "02:00 PM",
+      "endTime": "03:15 PM",
+      "capacity": 1,
+      "bookedCount": 1,
+      "status": "FULL"
+    },
+    {
+      "id": "slot-1794242772318-wls3",
+      "projectId": "proj-1",
+      "date": "2026-11-29",
+      "dayLabel": "Sunday, 29 Nov",
+      "startTime": "11:00 AM",
+      "endTime": "12:15 PM",
+      "capacity": 1,
+      "bookedCount": 1,
+      "status": "FULL"
+    }
+  ],
+  "leads": [
+    {
+      "id": "LD-58832",
+      "name": "Opt-Out Test Lead",
+      "phone": "98250 88776",
+      "normalizedPhone": "9825088776",
+      "source": "WEBSITE",
+      "status": "NEW",
+      "score": 15,
+      "temperature": "COLD",
+      "scoreReasons": [],
+      "requirements": {
+        "intent": "BUY",
+        "language": "en"
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T16:46:12.322Z",
+        "optOut": true,
+        "termsVersion": "v1.2",
+        "optOutAt": "2026-11-09T16:46:12.324Z"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": true,
+      "duplicateOfLeadId": "LD-59338",
+      "createdAt": "2026-11-09T16:46:12.323Z",
+      "updatedAt": "2026-11-09T16:46:12.323Z",
+      "lastActivityAt": "2026-11-09T16:46:12.323Z"
+    },
+    {
+      "id": "LD-59377",
+      "name": "Concurrent Buyer 2",
+      "phone": "98250 22222",
+      "normalizedPhone": "9825022222",
+      "source": "WEBSITE",
+      "status": "NEW",
+      "score": 48,
+      "temperature": "WARM",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 3 BHK requirement identified"
+      ],
+      "requirements": {
+        "bedrooms": 3,
+        "budgetMax": 10000000
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T16:46:12.320Z",
+        "optOut": false,
+        "termsVersion": "v1.2"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": true,
+      "duplicateOfLeadId": "LD-58806",
+      "createdAt": "2026-11-09T16:46:12.320Z",
+      "updatedAt": "2026-11-09T16:46:12.320Z",
+      "lastActivityAt": "2026-11-09T16:46:12.320Z"
+    },
+    {
+      "id": "LD-59084",
+      "name": "Concurrent Buyer 1",
+      "phone": "98250 11111",
+      "normalizedPhone": "9825011111",
+      "source": "WEBSITE",
+      "status": "VISIT_BOOKED",
+      "score": 71,
+      "temperature": "HOT",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 3 BHK requirement identified",
+        "Requested or confirmed site-visit schedule",
+        "Strong compatibility with active inventory"
+      ],
+      "requirements": {
+        "bedrooms": 3,
+        "budgetMax": 10000000,
+        "visitPreference": "Sunday, 29 Nov at 11:00 AM"
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T16:46:12.318Z",
+        "optOut": false,
+        "termsVersion": "v1.2"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": true,
+      "duplicateOfLeadId": "LD-58434",
+      "createdAt": "2026-11-09T16:46:12.319Z",
+      "updatedAt": "2026-11-09T16:46:12.321Z",
+      "lastActivityAt": "2026-11-09T16:46:12.321Z"
+    },
+    {
+      "id": "LD-59338",
+      "name": "Opt-Out Test Lead",
+      "phone": "98250 88776",
+      "normalizedPhone": "9825088776",
+      "source": "WEBSITE",
+      "status": "NEW",
+      "score": 15,
+      "temperature": "COLD",
+      "scoreReasons": [],
+      "requirements": {
+        "intent": "BUY",
+        "language": "en"
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T14:40:50.415Z",
+        "optOut": true,
+        "termsVersion": "v1.2",
+        "optOutAt": "2026-11-09T14:40:50.416Z"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": true,
+      "duplicateOfLeadId": "LD-58175",
+      "createdAt": "2026-11-09T14:40:50.416Z",
+      "updatedAt": "2026-11-09T14:40:50.416Z",
+      "lastActivityAt": "2026-11-09T14:40:50.416Z"
+    },
+    {
+      "id": "LD-58806",
+      "name": "Concurrent Buyer 2",
+      "phone": "98250 22222",
+      "normalizedPhone": "9825022222",
+      "source": "WEBSITE",
+      "status": "NEW",
+      "score": 48,
+      "temperature": "WARM",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 3 BHK requirement identified"
+      ],
+      "requirements": {
+        "bedrooms": 3,
+        "budgetMax": 10000000
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T14:40:50.412Z",
+        "optOut": false,
+        "termsVersion": "v1.2"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": true,
+      "duplicateOfLeadId": "LD-58782",
+      "createdAt": "2026-11-09T14:40:50.412Z",
+      "updatedAt": "2026-11-09T14:40:50.412Z",
+      "lastActivityAt": "2026-11-09T14:40:50.412Z"
+    },
+    {
+      "id": "LD-58434",
+      "name": "Concurrent Buyer 1",
+      "phone": "98250 11111",
+      "normalizedPhone": "9825011111",
+      "source": "WEBSITE",
+      "status": "VISIT_BOOKED",
+      "score": 71,
+      "temperature": "HOT",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 3 BHK requirement identified",
+        "Requested or confirmed site-visit schedule",
+        "Strong compatibility with active inventory"
+      ],
+      "requirements": {
+        "bedrooms": 3,
+        "budgetMax": 10000000,
+        "visitPreference": "Sunday, 29 Nov at 11:00 AM"
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T14:40:50.410Z",
+        "optOut": false,
+        "termsVersion": "v1.2"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": true,
+      "duplicateOfLeadId": "LD-59255",
+      "createdAt": "2026-11-09T14:40:50.411Z",
+      "updatedAt": "2026-11-09T14:40:50.413Z",
+      "lastActivityAt": "2026-11-09T14:40:50.413Z"
+    },
+    {
+      "id": "LD-58175",
+      "name": "Opt-Out Test Lead",
+      "phone": "98250 88776",
+      "normalizedPhone": "9825088776",
+      "source": "WEBSITE",
+      "status": "NEW",
+      "score": 15,
+      "temperature": "COLD",
+      "scoreReasons": [],
+      "requirements": {
+        "intent": "BUY",
+        "language": "en"
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T13:06:19.552Z",
+        "optOut": true,
+        "termsVersion": "v1.2",
+        "optOutAt": "2026-11-09T13:06:19.553Z"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": true,
+      "duplicateOfLeadId": "LD-59428",
+      "createdAt": "2026-11-09T13:06:19.553Z",
+      "updatedAt": "2026-11-09T13:06:19.553Z",
+      "lastActivityAt": "2026-11-09T13:06:19.553Z"
+    },
+    {
+      "id": "LD-58782",
+      "name": "Concurrent Buyer 2",
+      "phone": "98250 22222",
+      "normalizedPhone": "9825022222",
+      "source": "WEBSITE",
+      "status": "NEW",
+      "score": 48,
+      "temperature": "WARM",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 3 BHK requirement identified"
+      ],
+      "requirements": {
+        "bedrooms": 3,
+        "budgetMax": 10000000
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T13:06:19.538Z",
+        "optOut": false,
+        "termsVersion": "v1.2"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": true,
+      "duplicateOfLeadId": "LD-58640",
+      "createdAt": "2026-11-09T13:06:19.539Z",
+      "updatedAt": "2026-11-09T13:06:19.539Z",
+      "lastActivityAt": "2026-11-09T13:06:19.539Z"
+    },
+    {
+      "id": "LD-59255",
+      "name": "Concurrent Buyer 1",
+      "phone": "98250 11111",
+      "normalizedPhone": "9825011111",
+      "source": "WEBSITE",
+      "status": "VISIT_BOOKED",
+      "score": 71,
+      "temperature": "HOT",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 3 BHK requirement identified",
+        "Requested or confirmed site-visit schedule",
+        "Strong compatibility with active inventory"
+      ],
+      "requirements": {
+        "bedrooms": 3,
+        "budgetMax": 10000000,
+        "visitPreference": "Sunday, 29 Nov at 11:00 AM"
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T13:06:19.535Z",
+        "optOut": false,
+        "termsVersion": "v1.2"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": true,
+      "duplicateOfLeadId": "LD-58225",
+      "createdAt": "2026-11-09T13:06:19.537Z",
+      "updatedAt": "2026-11-09T13:06:19.551Z",
+      "lastActivityAt": "2026-11-09T13:06:19.551Z"
+    },
+    {
+      "id": "LD-59428",
+      "name": "Opt-Out Test Lead",
+      "phone": "98250 88776",
+      "normalizedPhone": "9825088776",
+      "source": "WEBSITE",
+      "status": "NEW",
+      "score": 15,
+      "temperature": "COLD",
+      "scoreReasons": [],
+      "requirements": {
+        "intent": "BUY",
+        "language": "en"
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T13:00:35.440Z",
+        "optOut": true,
+        "termsVersion": "v1.2",
+        "optOutAt": "2026-11-09T13:00:35.441Z"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": true,
+      "duplicateOfLeadId": "LD-58739",
+      "createdAt": "2026-11-09T13:00:35.441Z",
+      "updatedAt": "2026-11-09T13:00:35.441Z",
+      "lastActivityAt": "2026-11-09T13:00:35.441Z"
+    },
+    {
+      "id": "LD-58640",
+      "name": "Concurrent Buyer 2",
+      "phone": "98250 22222",
+      "normalizedPhone": "9825022222",
+      "source": "WEBSITE",
+      "status": "NEW",
+      "score": 48,
+      "temperature": "WARM",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 3 BHK requirement identified"
+      ],
+      "requirements": {
+        "bedrooms": 3,
+        "budgetMax": 10000000
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T13:00:35.439Z",
+        "optOut": false,
+        "termsVersion": "v1.2"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": true,
+      "duplicateOfLeadId": "LD-59647",
+      "createdAt": "2026-11-09T13:00:35.439Z",
+      "updatedAt": "2026-11-09T13:00:35.439Z",
+      "lastActivityAt": "2026-11-09T13:00:35.439Z"
+    },
+    {
+      "id": "LD-58225",
+      "name": "Concurrent Buyer 1",
+      "phone": "98250 11111",
+      "normalizedPhone": "9825011111",
+      "source": "WEBSITE",
+      "status": "VISIT_BOOKED",
+      "score": 71,
+      "temperature": "HOT",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 3 BHK requirement identified",
+        "Requested or confirmed site-visit schedule",
+        "Strong compatibility with active inventory"
+      ],
+      "requirements": {
+        "bedrooms": 3,
+        "budgetMax": 10000000,
+        "visitPreference": "Sunday, 29 Nov at 11:00 AM"
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T13:00:35.438Z",
+        "optOut": false,
+        "termsVersion": "v1.2"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": true,
+      "duplicateOfLeadId": "LD-59950",
+      "createdAt": "2026-11-09T13:00:35.438Z",
+      "updatedAt": "2026-11-09T13:00:35.440Z",
+      "lastActivityAt": "2026-11-09T13:00:35.440Z"
+    },
+    {
+      "id": "LD-58739",
+      "name": "Opt-Out Test Lead",
+      "phone": "98250 88776",
+      "normalizedPhone": "9825088776",
+      "source": "WEBSITE",
+      "status": "NEW",
+      "score": 15,
+      "temperature": "COLD",
+      "scoreReasons": [],
+      "requirements": {
+        "intent": "BUY",
+        "language": "en"
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T13:00:23.169Z",
+        "optOut": true,
+        "termsVersion": "v1.2",
+        "optOutAt": "2026-11-09T13:00:23.169Z"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": false,
+      "createdAt": "2026-11-09T13:00:23.169Z",
+      "updatedAt": "2026-11-09T13:00:23.169Z",
+      "lastActivityAt": "2026-11-09T13:00:23.169Z"
+    },
+    {
+      "id": "LD-59647",
+      "name": "Concurrent Buyer 2",
+      "phone": "98250 22222",
+      "normalizedPhone": "9825022222",
+      "source": "WEBSITE",
+      "status": "NEW",
+      "score": 48,
+      "temperature": "WARM",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 3 BHK requirement identified"
+      ],
+      "requirements": {
+        "bedrooms": 3,
+        "budgetMax": 10000000
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T13:00:23.167Z",
+        "optOut": false,
+        "termsVersion": "v1.2"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": false,
+      "createdAt": "2026-11-09T13:00:23.167Z",
+      "updatedAt": "2026-11-09T13:00:23.167Z",
+      "lastActivityAt": "2026-11-09T13:00:23.167Z"
+    },
+    {
+      "id": "LD-59950",
+      "name": "Concurrent Buyer 1",
+      "phone": "98250 11111",
+      "normalizedPhone": "9825011111",
+      "source": "WEBSITE",
+      "status": "VISIT_BOOKED",
+      "score": 71,
+      "temperature": "HOT",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 3 BHK requirement identified",
+        "Requested or confirmed site-visit schedule",
+        "Strong compatibility with active inventory"
+      ],
+      "requirements": {
+        "bedrooms": 3,
+        "budgetMax": 10000000,
+        "visitPreference": "Sunday, 29 Nov at 11:00 AM"
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 85,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-09T13:00:23.166Z",
+        "optOut": false,
+        "termsVersion": "v1.2"
+      },
+      "firstResponseMinutes": 1.8,
+      "isDuplicate": false,
+      "createdAt": "2026-11-09T13:00:23.167Z",
+      "updatedAt": "2026-11-09T13:00:23.168Z",
+      "lastActivityAt": "2026-11-09T13:00:23.168Z"
+    },
+    {
+      "id": "LD-58210",
+      "name": "Hardik Patel",
+      "phone": "+91 98980 44210",
+      "normalizedPhone": "9898044210",
+      "email": "hardik.patel@gujarattech.in",
+      "source": "PROPERTY_PORTAL",
+      "status": "VISIT_BOOKED",
+      "score": 84,
+      "temperature": "HOT",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 3 BHK requirement identified",
+        "Wants to purchase within 6 months",
+        "Requested or confirmed site-visit schedule",
+        "Strong compatibility with active inventory"
+      ],
+      "requirements": {
+        "language": "hi",
+        "propertyType": "Apartment",
+        "bedrooms": 3,
+        "budgetMin": 9000000,
+        "budgetMax": 11000000,
+        "budgetDisplay": "₹90L – ₹1.1Cr",
+        "purchaseTimeline": "0-6 months",
+        "intent": "BUY",
+        "visitPreference": "Weekend visit",
+        "locationPreference": "Ambli-Bopal Road",
+        "specificNotes": "Buyer wants weekend visit and prefers a home close to major road connectivity."
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 92,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-01T10:55:00.000Z",
+        "optOut": false,
+        "termsVersion": "v1.2-2026"
+      },
+      "firstResponseMinutes": 2.1,
+      "aiHandoffSummary": "Lead: Hardik Patel\nInterested in: 3 BHK\nBudget: ₹90L–₹1.1Cr\nPreferred location: Ahmedabad (Ambli-Bopal Road)\nPurchase timeline: 0–6 months\nLead score: 84 — HOT\nSite visit: Booked for Saturday\nRecommended project: Aura Elysium\nImportant context: Buyer wants weekend visit and prefers a home close to major road connectivity.",
+      "createdAt": "2026-11-01T10:52:00.000Z",
+      "updatedAt": "2026-11-01T11:00:00.000Z",
+      "lastActivityAt": "2026-11-01T11:00:00.000Z"
+    },
+    {
+      "id": "LD-58211",
+      "name": "Nidhi Shah",
+      "phone": "+91 98240 55112",
+      "normalizedPhone": "9824055112",
+      "email": "nidhi.shah@outlook.com",
+      "source": "SOCIAL_MEDIA",
+      "status": "QUALIFIED",
+      "score": 58,
+      "temperature": "WARM",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 2 BHK requirement identified",
+        "Planning purchase in 6–12 months",
+        "Strong compatibility with active inventory"
+      ],
+      "requirements": {
+        "language": "en",
+        "propertyType": "Apartment",
+        "bedrooms": 2,
+        "budgetMin": 6500000,
+        "budgetMax": 8000000,
+        "budgetDisplay": "₹65L – ₹80L",
+        "purchaseTimeline": "6-12 months",
+        "intent": "BUY",
+        "locationPreference": "Shela",
+        "specificNotes": "Looking for peaceful green surroundings and modern clubhouse."
+      },
+      "matchedProjectId": "proj-2",
+      "matchScore": 88,
+      "assignedExecutiveId": "exec-2",
+      "assignedExecutiveName": "Rahul Mehta",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-02T14:15:00.000Z",
+        "optOut": false,
+        "termsVersion": "v1.2-2026"
+      },
+      "firstResponseMinutes": 3.4,
+      "createdAt": "2026-11-02T14:10:00.000Z",
+      "updatedAt": "2026-11-02T14:20:00.000Z",
+      "lastActivityAt": "2026-11-02T14:20:00.000Z"
+    },
+    {
+      "id": "LD-58224",
+      "name": "Kavita Joshi",
+      "phone": "+91 97120 77334",
+      "normalizedPhone": "9712077334",
+      "email": "kavita.joshi@gmail.com",
+      "source": "HOARDING",
+      "status": "VISITED",
+      "score": 76,
+      "temperature": "HOT",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 2 BHK requirement identified",
+        "Wants to purchase within 6 months",
+        "Completed site-visit",
+        "Strong compatibility with active inventory"
+      ],
+      "requirements": {
+        "language": "gu",
+        "propertyType": "Apartment",
+        "bedrooms": 2,
+        "budgetMin": 7000000,
+        "budgetMax": 8500000,
+        "budgetDisplay": "₹70L – ₹85L",
+        "purchaseTimeline": "0-6 months",
+        "intent": "BUY",
+        "visitPreference": "Completed",
+        "locationPreference": "South Bopal",
+        "specificNotes": "Enquired after seeing SP Ring Road hoarding. Came with family."
+      },
+      "matchedProjectId": "proj-2",
+      "matchScore": 90,
+      "assignedExecutiveId": "exec-3",
+      "assignedExecutiveName": "Ananya Trivedi",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-03T09:30:00.000Z",
+        "optOut": false,
+        "termsVersion": "v1.2-2026"
+      },
+      "firstResponseMinutes": 4.1,
+      "createdAt": "2026-11-03T09:25:00.000Z",
+      "updatedAt": "2026-11-04T16:00:00.000Z",
+      "lastActivityAt": "2026-11-04T16:00:00.000Z"
+    },
+    {
+      "id": "LD-58491",
+      "name": "Hardik Patel",
+      "phone": "98980 44210",
+      "normalizedPhone": "9898044210",
+      "email": "hardik.patel@gujarattech.in",
+      "source": "WEBSITE",
+      "status": "NEW",
+      "score": 64,
+      "temperature": "WARM",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 3 BHK requirement identified",
+        "Potential duplicate lead detected (92% match with LD-58210)"
+      ],
+      "requirements": {
+        "language": "en",
+        "propertyType": "Apartment",
+        "bedrooms": 3,
+        "budgetMax": 10500000,
+        "budgetDisplay": "₹1.05 Cr",
+        "intent": "BUY",
+        "locationPreference": "Ambli"
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 89,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-08T16:20:00.000Z",
+        "optOut": false,
+        "termsVersion": "v1.2-2026"
+      },
+      "firstResponseMinutes": 1.5,
+      "isDuplicate": true,
+      "duplicateOfLeadId": "LD-58210",
+      "createdAt": "2026-11-08T16:18:00.000Z",
+      "updatedAt": "2026-11-08T16:20:00.000Z",
+      "lastActivityAt": "2026-11-08T16:20:00.000Z"
+    },
+    {
+      "id": "LD-58301",
+      "name": "Bhavesh Parmar",
+      "phone": "+91 98251 11223",
+      "normalizedPhone": "9825111223",
+      "email": "bhavesh.parmar@gmail.com",
+      "source": "REFERRAL",
+      "status": "VISIT_BOOKED",
+      "score": 82,
+      "temperature": "HOT",
+      "scoreReasons": [
+        "Budget matches available project range (₹65L–₹1.2Cr)",
+        "Specific 3 BHK requirement identified",
+        "Ready to purchase within 3 months",
+        "Requested site-visit"
+      ],
+      "requirements": {
+        "language": "gu",
+        "propertyType": "Apartment",
+        "bedrooms": 3,
+        "budgetMin": 9500000,
+        "budgetMax": 11500000,
+        "budgetDisplay": "₹95L – ₹1.15Cr",
+        "purchaseTimeline": "0-3 months",
+        "intent": "BUY",
+        "locationPreference": "Ambli-Bopal Road"
+      },
+      "matchedProjectId": "proj-1",
+      "matchScore": 94,
+      "assignedExecutiveId": "exec-1",
+      "assignedExecutiveName": "Priya Shah",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-05T11:00:00.000Z",
+        "optOut": false,
+        "termsVersion": "v1.2-2026"
+      },
+      "firstResponseMinutes": 2.8,
+      "createdAt": "2026-11-05T10:50:00.000Z",
+      "updatedAt": "2026-11-05T11:30:00.000Z",
+      "lastActivityAt": "2026-11-05T11:30:00.000Z"
+    },
+    {
+      "id": "LD-58302",
+      "name": "Meera Desai",
+      "phone": "+91 97230 44556",
+      "normalizedPhone": "9723044556",
+      "email": "meera.desai@yahoo.co.in",
+      "source": "WEBSITE",
+      "status": "VISITED",
+      "score": 78,
+      "temperature": "HOT",
+      "scoreReasons": [
+        "Budget matches available project range",
+        "Specific 2 BHK requirement",
+        "Completed site-visit"
+      ],
+      "requirements": {
+        "language": "en",
+        "propertyType": "Apartment",
+        "bedrooms": 2,
+        "budgetMin": 6800000,
+        "budgetMax": 7800000,
+        "budgetDisplay": "₹68L – ₹78L",
+        "purchaseTimeline": "0-6 months",
+        "intent": "BUY",
+        "locationPreference": "Shela"
+      },
+      "matchedProjectId": "proj-2",
+      "matchScore": 91,
+      "assignedExecutiveId": "exec-2",
+      "assignedExecutiveName": "Rahul Mehta",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-06T15:00:00.000Z",
+        "optOut": false,
+        "termsVersion": "v1.2-2026"
+      },
+      "firstResponseMinutes": 1.9,
+      "createdAt": "2026-11-06T14:55:00.000Z",
+      "updatedAt": "2026-11-07T12:00:00.000Z",
+      "lastActivityAt": "2026-11-07T12:00:00.000Z"
+    },
+    {
+      "id": "LD-58303",
+      "name": "Rajesh Solanki",
+      "phone": "+91 99090 33445",
+      "normalizedPhone": "9909033445",
+      "source": "HOARDING",
+      "status": "NO_SHOW",
+      "score": 45,
+      "temperature": "WARM",
+      "scoreReasons": [
+        "Budget unspecified",
+        "Missed scheduled appointment"
+      ],
+      "requirements": {
+        "language": "hi",
+        "propertyType": "Apartment",
+        "bedrooms": 2,
+        "purchaseTimeline": "exploring",
+        "intent": "RESEARCH"
+      },
+      "matchedProjectId": "proj-2",
+      "matchScore": 68,
+      "assignedExecutiveId": "exec-3",
+      "assignedExecutiveName": "Ananya Trivedi",
+      "consent": {
+        "consentGiven": true,
+        "consentAt": "2026-11-04T12:00:00.000Z",
+        "optOut": false,
+        "termsVersion": "v1.2-2026"
+      },
+      "firstResponseMinutes": 4.8,
+      "createdAt": "2026-11-04T11:45:00.000Z",
+      "updatedAt": "2026-11-05T14:00:00.000Z",
+      "lastActivityAt": "2026-11-05T14:00:00.000Z"
+    }
+  ],
+  "siteVisits": [
+    {
+      "id": "vis-58210",
+      "leadId": "LD-58210",
+      "projectId": "proj-1",
+      "projectName": "Aura Elysium",
+      "slotId": "slot-sat-1130-ae",
+      "date": "2026-11-14",
+      "dayLabel": "Saturday, 14 Nov",
+      "time": "11:30 AM",
+      "status": "SCHEDULED",
+      "bookedAt": "2026-11-01T11:00:00.000Z"
+    },
+    {
+      "id": "vis-58224",
+      "leadId": "LD-58224",
+      "projectId": "proj-2",
+      "projectName": "The Serene Botanica",
+      "slotId": "slot-sat-1130-sb",
+      "date": "2026-11-07",
+      "dayLabel": "Saturday, 7 Nov",
+      "time": "11:30 AM",
+      "status": "COMPLETED",
+      "bookedAt": "2026-11-03T09:35:00.000Z",
+      "completedAt": "2026-11-07T12:15:00.000Z"
+    },
+    {
+      "id": "vis-58301",
+      "leadId": "LD-58301",
+      "projectId": "proj-1",
+      "projectName": "Aura Elysium",
+      "slotId": "slot-sat-1000-ae",
+      "date": "2026-11-14",
+      "dayLabel": "Saturday, 14 Nov",
+      "time": "10:00 AM",
+      "status": "SCHEDULED",
+      "bookedAt": "2026-11-05T11:30:00.000Z"
+    },
+    {
+      "id": "vis-58302",
+      "leadId": "LD-58302",
+      "projectId": "proj-2",
+      "projectName": "The Serene Botanica",
+      "slotId": "slot-sat-1500-sb",
+      "date": "2026-11-07",
+      "dayLabel": "Saturday, 7 Nov",
+      "time": "03:00 PM",
+      "status": "COMPLETED",
+      "bookedAt": "2026-11-06T15:00:00.000Z",
+      "completedAt": "2026-11-07T15:45:00.000Z"
+    },
+    {
+      "id": "vis-58303",
+      "leadId": "LD-58303",
+      "projectId": "proj-2",
+      "projectName": "The Serene Botanica",
+      "slotId": "slot-sat-1000-sb",
+      "date": "2026-11-05",
+      "dayLabel": "Thursday, 5 Nov",
+      "time": "10:00 AM",
+      "status": "NO_SHOW",
+      "bookedAt": "2026-11-04T12:00:00.000Z"
+    },
+    {
+      "id": "vis-223168",
+      "leadId": "LD-59950",
+      "projectId": "proj-1",
+      "projectName": "Aura Elysium",
+      "slotId": "slot-1794229223166-0v5w",
+      "date": "2026-11-29",
+      "dayLabel": "Sunday, 29 Nov",
+      "time": "11:00 AM",
+      "status": "SCHEDULED",
+      "bookedAt": "2026-11-09T13:00:23.168Z",
+      "notes": "Concurrent test attempt #1"
+    },
+    {
+      "id": "vis-235440",
+      "leadId": "LD-58225",
+      "projectId": "proj-1",
+      "projectName": "Aura Elysium",
+      "slotId": "slot-1794229235437-ep4r",
+      "date": "2026-11-29",
+      "dayLabel": "Sunday, 29 Nov",
+      "time": "11:00 AM",
+      "status": "SCHEDULED",
+      "bookedAt": "2026-11-09T13:00:35.440Z",
+      "notes": "Concurrent test attempt #1"
+    },
+    {
+      "id": "vis-579551",
+      "leadId": "LD-59255",
+      "projectId": "proj-1",
+      "projectName": "Aura Elysium",
+      "slotId": "slot-1794229579534-dxjs",
+      "date": "2026-11-29",
+      "dayLabel": "Sunday, 29 Nov",
+      "time": "11:00 AM",
+      "status": "SCHEDULED",
+      "bookedAt": "2026-11-09T13:06:19.551Z",
+      "notes": "Concurrent test attempt #1"
+    },
+    {
+      "id": "vis-250413",
+      "leadId": "LD-58434",
+      "projectId": "proj-1",
+      "projectName": "Aura Elysium",
+      "slotId": "slot-1794235250410-mad9",
+      "date": "2026-11-29",
+      "dayLabel": "Sunday, 29 Nov",
+      "time": "11:00 AM",
+      "status": "SCHEDULED",
+      "bookedAt": "2026-11-09T14:40:50.413Z",
+      "notes": "Concurrent test attempt #1"
+    },
+    {
+      "id": "vis-772321",
+      "leadId": "LD-59084",
+      "projectId": "proj-1",
+      "projectName": "Aura Elysium",
+      "slotId": "slot-1794242772318-wls3",
+      "date": "2026-11-29",
+      "dayLabel": "Sunday, 29 Nov",
+      "time": "11:00 AM",
+      "status": "SCHEDULED",
+      "bookedAt": "2026-11-09T16:46:12.321Z",
+      "notes": "Concurrent test attempt #1"
+    }
+  ],
+  "reminders": [
+    {
+      "id": "rem-58210-24h",
+      "siteVisitId": "vis-58210",
+      "leadId": "LD-58210",
+      "type": "24_HOURS_BEFORE",
+      "label": "1 day before visit (Friday, 13 Nov · 11:30 AM)",
+      "scheduledFor": "2026-11-13T11:30:00.000Z",
+      "status": "SCHEDULED",
+      "message": "Namaste Hardik-bhai, this is a reminder for your Aura Elysium site visit tomorrow at 11:30 AM on Ambli-Bopal Road. Senior consultant Priya Shah is reserved for you."
+    },
+    {
+      "id": "rem-58210-2h",
+      "siteVisitId": "vis-58210",
+      "leadId": "LD-58210",
+      "type": "2_HOURS_BEFORE",
+      "label": "2 hours before visit (Saturday, 14 Nov · 09:30 AM)",
+      "scheduledFor": "2026-11-14T09:30:00.000Z",
+      "status": "SCHEDULED",
+      "message": "Your Aura Elysium sample flat tour starts in 2 hours (11:30 AM). Free valet parking is available at the main gate."
+    },
+    {
+      "id": "rem-58301-24h",
+      "siteVisitId": "vis-58301",
+      "leadId": "LD-58301",
+      "type": "24_HOURS_BEFORE",
+      "label": "1 day before visit (Friday, 13 Nov · 10:00 AM)",
+      "scheduledFor": "2026-11-13T10:00:00.000Z",
+      "status": "SCHEDULED",
+      "message": "Reminder for Aura Elysium site visit tomorrow at 10:00 AM."
+    },
+    {
+      "id": "rem-vis-223168-24h",
+      "siteVisitId": "vis-223168",
+      "leadId": "LD-59950",
+      "type": "24_HOURS_BEFORE",
+      "label": "1 day before visit (Sunday, 29 Nov · 24h prior)",
+      "scheduledFor": "2026-11-28T11:00:00.000Z",
+      "status": "SCHEDULED",
+      "message": "Namaste Concurrent Buyer 1, this is a reminder for your confirmed site visit to Aura Elysium on Sunday, 29 Nov at 11:00 AM. Location: Survey No. 420, Opp. Iscon Flower, Ambli-Bopal Road, Ahmedabad, Gujarat 380058"
+    },
+    {
+      "id": "rem-vis-223168-2h",
+      "siteVisitId": "vis-223168",
+      "leadId": "LD-59950",
+      "type": "2_HOURS_BEFORE",
+      "label": "2 hours before visit (11:00 AM · 2h prior)",
+      "scheduledFor": "2026-11-29T09:00:00.000Z",
+      "status": "SCHEDULED",
+      "message": "Your sample flat walkthrough at Aura Elysium is in 2 hours (11:00 AM). Executive Priya Shah is ready to welcome you. Free parking at Gate 1."
+    },
+    {
+      "id": "rem-vis-235440-24h",
+      "siteVisitId": "vis-235440",
+      "leadId": "LD-58225",
+      "type": "24_HOURS_BEFORE",
+      "label": "1 day before visit (Sunday, 29 Nov · 24h prior)",
+      "scheduledFor": "2026-11-28T11:00:00.000Z",
+      "status": "SCHEDULED",
+      "message": "Namaste Concurrent Buyer 1, this is a reminder for your confirmed site visit to Aura Elysium on Sunday, 29 Nov at 11:00 AM. Location: Survey No. 420, Opp. Iscon Flower, Ambli-Bopal Road, Ahmedabad, Gujarat 380058"
+    },
+    {
+      "id": "rem-vis-235440-2h",
+      "siteVisitId": "vis-235440",
+      "leadId": "LD-58225",
+      "type": "2_HOURS_BEFORE",
+      "label": "2 hours before visit (11:00 AM · 2h prior)",
+      "scheduledFor": "2026-11-29T09:00:00.000Z",
+      "status": "SCHEDULED",
+      "message": "Your sample flat walkthrough at Aura Elysium is in 2 hours (11:00 AM). Executive Priya Shah is ready to welcome you. Free parking at Gate 1."
+    },
+    {
+      "id": "rem-vis-579551-24h",
+      "siteVisitId": "vis-579551",
+      "leadId": "LD-59255",
+      "type": "24_HOURS_BEFORE",
+      "label": "1 day before visit (Sunday, 29 Nov · 24h prior)",
+      "scheduledFor": "2026-11-28T11:00:00.000Z",
+      "status": "SCHEDULED",
+      "message": "Namaste Concurrent Buyer 1, this is a reminder for your confirmed site visit to Aura Elysium on Sunday, 29 Nov at 11:00 AM. Location: Survey No. 420, Opp. Iscon Flower, Ambli-Bopal Road, Ahmedabad, Gujarat 380058"
+    },
+    {
+      "id": "rem-vis-579551-2h",
+      "siteVisitId": "vis-579551",
+      "leadId": "LD-59255",
+      "type": "2_HOURS_BEFORE",
+      "label": "2 hours before visit (11:00 AM · 2h prior)",
+      "scheduledFor": "2026-11-29T09:00:00.000Z",
+      "status": "SCHEDULED",
+      "message": "Your sample flat walkthrough at Aura Elysium is in 2 hours (11:00 AM). Executive Priya Shah is ready to welcome you. Free parking at Gate 1."
+    },
+    {
+      "id": "rem-vis-250413-24h",
+      "siteVisitId": "vis-250413",
+      "leadId": "LD-58434",
+      "type": "24_HOURS_BEFORE",
+      "label": "1 day before visit (Sunday, 29 Nov · 24h prior)",
+      "scheduledFor": "2026-11-28T11:00:00.000Z",
+      "status": "SCHEDULED",
+      "message": "Namaste Concurrent Buyer 1, this is a reminder for your confirmed site visit to Aura Elysium on Sunday, 29 Nov at 11:00 AM. Location: Survey No. 420, Opp. Iscon Flower, Ambli-Bopal Road, Ahmedabad, Gujarat 380058"
+    },
+    {
+      "id": "rem-vis-250413-2h",
+      "siteVisitId": "vis-250413",
+      "leadId": "LD-58434",
+      "type": "2_HOURS_BEFORE",
+      "label": "2 hours before visit (11:00 AM · 2h prior)",
+      "scheduledFor": "2026-11-29T09:00:00.000Z",
+      "status": "SCHEDULED",
+      "message": "Your sample flat walkthrough at Aura Elysium is in 2 hours (11:00 AM). Executive Priya Shah is ready to welcome you. Free parking at Gate 1."
+    },
+    {
+      "id": "rem-vis-772321-24h",
+      "siteVisitId": "vis-772321",
+      "leadId": "LD-59084",
+      "type": "24_HOURS_BEFORE",
+      "label": "1 day before visit (Sunday, 29 Nov · 24h prior)",
+      "scheduledFor": "2026-11-28T11:00:00.000Z",
+      "status": "SCHEDULED",
+      "message": "Namaste Concurrent Buyer 1, this is a reminder for your confirmed site visit to Aura Elysium on Sunday, 29 Nov at 11:00 AM. Location: Survey No. 420, Opp. Iscon Flower, Ambli-Bopal Road, Ahmedabad, Gujarat 380058"
+    },
+    {
+      "id": "rem-vis-772321-2h",
+      "siteVisitId": "vis-772321",
+      "leadId": "LD-59084",
+      "type": "2_HOURS_BEFORE",
+      "label": "2 hours before visit (11:00 AM · 2h prior)",
+      "scheduledFor": "2026-11-29T09:00:00.000Z",
+      "status": "SCHEDULED",
+      "message": "Your sample flat walkthrough at Aura Elysium is in 2 hours (11:00 AM). Executive Priya Shah is ready to welcome you. Free parking at Gate 1."
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1",
+      "conversationId": "conv-58210",
+      "leadId": "LD-58210",
+      "role": "user",
+      "content": "Mujhe Ahmedabad mein 3 BHK chahiye. Budget 1 crore ke aas paas hai. Main is weekend site visit kar sakta hoon.",
+      "language": "hi",
+      "timestamp": "2026-11-01T10:52:00.000Z"
+    },
+    {
+      "id": "msg-2",
+      "conversationId": "conv-58210",
+      "leadId": "LD-58210",
+      "role": "assistant",
+      "content": "Namaste Hardik-ji! Company A ke Aura Elysium project mein Ambli-Bopal Road par aapke budget (₹90L–₹1.15Cr) ke anuroop premium 3 BHK residences available hain. Yeh RERA approved (PR/GJ/AHMEDABAD/AUDA/MAA10422/2024) hai. Is weekend (Saturday, 14 Nov) hamare sample flats visit ke liye available hain. Kya main aapko 11:30 AM ka slot schedule kar doon?",
+      "language": "hi",
+      "timestamp": "2026-11-01T10:54:05.000Z"
+    },
+    {
+      "id": "msg-3",
+      "conversationId": "conv-58210",
+      "leadId": "LD-58210",
+      "role": "user",
+      "content": "Haan, Saturday 11:30 AM theek rahega. Please confirm kar dijiye.",
+      "language": "hi",
+      "timestamp": "2026-11-01T10:58:30.000Z"
+    },
+    {
+      "id": "msg-4",
+      "conversationId": "conv-58210",
+      "leadId": "LD-58210",
+      "role": "assistant",
+      "content": "Aapka site visit Saturday, 14 Nov subah 11:30 AM Aura Elysium (Ambli-Bopal Road) ke liye safaltapoorvak confirm ho gaya hai! Senior Consultant Priya Shah aapko receive karengi. Reminders schedule ho chuke hain.",
+      "language": "hi",
+      "timestamp": "2026-11-01T11:00:00.000Z"
+    },
+    {
+      "conversationId": "conv-temp",
+      "role": "user",
+      "content": "Mujhe Ahmedabad mein 3 BHK chahiye. Budget 1 crore ke aas paas hai. Main is weekend site visit kar sakta hoon.",
+      "language": "hi",
+      "id": "msg-1794229666788-2qbz",
+      "timestamp": "2026-11-09T13:07:46.788Z"
+    },
+    {
+      "conversationId": "conv-temp",
+      "role": "assistant",
+      "content": "Namaste! Aapke requirement ke anusaar Ambli-Bopal Road par hamara premium high-rise project **Aura Elysium** ek behtareen match hai (92% compatibility).\n\n• **Configurations**: 3 BHK (1,680–1,940 sq.ft)\n• **Registered Price**: ₹90L–₹1.18 Cr (Fits ₹1 Cr budget)\n• **RERA No**: PR/GJ/AHMEDABAD/AUDA/MAA10422/2024\n• **Possession**: December 2026\n• **Amenities**: Infinity lap pool, double-height clubhouse, dedicated EV charging\n\nIs weekend (Saturday, 14 Nov) hamare show-homes open hain. Neeche genuine available slots diye gaye hain—kya main aapko **11:30 AM** ya **03:00 PM** ka slot confirm kar doon?",
+      "language": "hi",
+      "id": "msg-1794229666789-aql8",
+      "timestamp": "2026-11-09T13:07:46.789Z"
+    },
+    {
+      "conversationId": "conv-temp",
+      "role": "user",
+      "content": "I want the cheapest 2BHK. What is the final price including everything?",
+      "language": "en",
+      "id": "msg-1794229677258-ggrc",
+      "timestamp": "2026-11-09T13:07:57.258Z"
+    },
+    {
+      "conversationId": "conv-temp",
+      "role": "assistant",
+      "content": "I can share the registered project pricing available in my fact sheet (starting at ₹65 Lakh for 2 BHK at The Serene Botanica, RERA: PR/GJ/AHMEDABAD/AUDA/MAA09918/2023), but I cannot provide a final all-inclusive price or discount. A sales executive can confirm the applicable floor-rise and registration charges. Would you like me to connect you with a sales executive?",
+      "language": "en",
+      "id": "msg-1794229677259-12ao",
+      "timestamp": "2026-11-09T13:07:57.259Z"
+    },
+    {
+      "conversationId": "conv-temp",
+      "role": "user",
+      "content": "Mujhe Ahmedabad mein 3 BHK chahiye. Budget 1 crore ke aas paas hai. Main is weekend site visit kar sakta hoon.",
+      "language": "hi",
+      "id": "msg-1794242811909-ekxo",
+      "timestamp": "2026-11-09T16:46:51.909Z"
+    },
+    {
+      "conversationId": "conv-temp",
+      "role": "assistant",
+      "content": "Namaste! Aapke requirement ke anusaar Ambli-Bopal Road par hamara premium high-rise project **Aura Elysium** ek behtareen match hai (92% compatibility).\n\n• **Configurations**: 3 BHK (1,680–1,940 sq.ft)\n• **Registered Price**: ₹90L–₹1.18 Cr (Fits ₹1 Cr budget)\n• **RERA No**: PR/GJ/AHMEDABAD/AUDA/MAA10422/2024\n• **Possession**: December 2026\n• **Amenities**: Infinity lap pool, double-height clubhouse, dedicated EV charging\n\nIs weekend (Saturday, 14 Nov) hamare show-homes open hain. Neeche genuine available slots diye gaye hain—kya main aapko **11:30 AM** ya **03:00 PM** ka slot confirm kar doon?",
+      "language": "hi",
+      "id": "msg-1794242811911-xko4",
+      "timestamp": "2026-11-09T16:46:51.911Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1",
+      "leadId": "LD-58210",
+      "type": "LEAD_CREATED",
+      "title": "Lead Ingested from Property Portal",
+      "description": "Enquiry received from 99acres with initial intent for 3 BHK.",
+      "timestamp": "2026-11-01T10:52:00.000Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-2",
+      "leadId": "LD-58210",
+      "type": "AI_QUALIFIED",
+      "title": "AI Qualification Engine: Score 84 (HOT)",
+      "description": "Requirements captured: 3 BHK, ₹90L–₹1.1Cr, Ambli-Bopal, Weekend visit requested.",
+      "timestamp": "2026-11-01T10:54:10.000Z",
+      "actor": "AI Assistant"
+    },
+    {
+      "id": "act-3",
+      "leadId": "LD-58210",
+      "type": "SITE_VISIT_BOOKED",
+      "title": "Site Visit Confirmed: Saturday 11:30 AM",
+      "description": "Slot locked for Aura Elysium. Automated reminders queued for 24h & 2h before.",
+      "timestamp": "2026-11-01T11:00:00.000Z",
+      "actor": "Booking Engine"
+    },
+    {
+      "id": "act-4",
+      "leadId": "LD-58210",
+      "type": "AI_HANDOFF",
+      "title": "Sales Handoff Assigned to Priya Shah",
+      "description": "Complete conversation context and qualification briefing dispatched.",
+      "timestamp": "2026-11-01T11:00:05.000Z",
+      "actor": "Handoff Protocol"
+    },
+    {
+      "id": "act-1794229223167",
+      "leadId": "LD-59950",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 48 (WARM). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T13:00:23.167Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794229223167",
+      "leadId": "LD-59647",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 48 (WARM). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T13:00:23.167Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794229223168",
+      "leadId": "LD-59950",
+      "type": "SITE_VISIT_BOOKED",
+      "title": "Site Visit Booked: Aura Elysium",
+      "description": "Scheduled for Sunday, 29 Nov at 11:00 AM. Reminders queued.",
+      "timestamp": "2026-11-09T13:00:23.168Z",
+      "actor": "Booking Engine"
+    },
+    {
+      "id": "act-1794229223169",
+      "leadId": "LD-58739",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 15 (COLD). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T13:00:23.169Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794229223169",
+      "leadId": "LD-58739",
+      "type": "OPT_OUT",
+      "title": "Buyer Opted Out of Marketing Contacts",
+      "description": "Compliance safety enforced: All future automated marketing notifications cancelled.",
+      "timestamp": "2026-11-09T13:00:23.169Z",
+      "actor": "Buyer / Consent Gateway"
+    },
+    {
+      "id": "act-1794229235438",
+      "leadId": "LD-58225",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 48 (WARM). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T13:00:35.438Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794229235439",
+      "leadId": "LD-58640",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 48 (WARM). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T13:00:35.439Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794229235440",
+      "leadId": "LD-58225",
+      "type": "SITE_VISIT_BOOKED",
+      "title": "Site Visit Booked: Aura Elysium",
+      "description": "Scheduled for Sunday, 29 Nov at 11:00 AM. Reminders queued.",
+      "timestamp": "2026-11-09T13:00:35.440Z",
+      "actor": "Booking Engine"
+    },
+    {
+      "id": "act-1794229235441",
+      "leadId": "LD-59428",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 15 (COLD). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T13:00:35.441Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794229235441",
+      "leadId": "LD-59428",
+      "type": "OPT_OUT",
+      "title": "Buyer Opted Out of Marketing Contacts",
+      "description": "Compliance safety enforced: All future automated marketing notifications cancelled.",
+      "timestamp": "2026-11-09T13:00:35.441Z",
+      "actor": "Buyer / Consent Gateway"
+    },
+    {
+      "id": "act-1794229579537",
+      "leadId": "LD-59255",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 48 (WARM). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T13:06:19.537Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794229579539",
+      "leadId": "LD-58782",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 48 (WARM). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T13:06:19.539Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794229579551",
+      "leadId": "LD-59255",
+      "type": "SITE_VISIT_BOOKED",
+      "title": "Site Visit Booked: Aura Elysium",
+      "description": "Scheduled for Sunday, 29 Nov at 11:00 AM. Reminders queued.",
+      "timestamp": "2026-11-09T13:06:19.551Z",
+      "actor": "Booking Engine"
+    },
+    {
+      "id": "act-1794229579553",
+      "leadId": "LD-58175",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 15 (COLD). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T13:06:19.553Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794229579553",
+      "leadId": "LD-58175",
+      "type": "OPT_OUT",
+      "title": "Buyer Opted Out of Marketing Contacts",
+      "description": "Compliance safety enforced: All future automated marketing notifications cancelled.",
+      "timestamp": "2026-11-09T13:06:19.553Z",
+      "actor": "Buyer / Consent Gateway"
+    },
+    {
+      "id": "act-1794235250411",
+      "leadId": "LD-58434",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 48 (WARM). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T14:40:50.411Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794235250412",
+      "leadId": "LD-58806",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 48 (WARM). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T14:40:50.412Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794235250413",
+      "leadId": "LD-58434",
+      "type": "SITE_VISIT_BOOKED",
+      "title": "Site Visit Booked: Aura Elysium",
+      "description": "Scheduled for Sunday, 29 Nov at 11:00 AM. Reminders queued.",
+      "timestamp": "2026-11-09T14:40:50.413Z",
+      "actor": "Booking Engine"
+    },
+    {
+      "id": "act-1794235250416",
+      "leadId": "LD-59338",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 15 (COLD). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T14:40:50.416Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794235250416",
+      "leadId": "LD-59338",
+      "type": "OPT_OUT",
+      "title": "Buyer Opted Out of Marketing Contacts",
+      "description": "Compliance safety enforced: All future automated marketing notifications cancelled.",
+      "timestamp": "2026-11-09T14:40:50.416Z",
+      "actor": "Buyer / Consent Gateway"
+    },
+    {
+      "id": "act-1794242772319",
+      "leadId": "LD-59084",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 48 (WARM). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T16:46:12.319Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794242772320",
+      "leadId": "LD-59377",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 48 (WARM). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T16:46:12.320Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794242772321",
+      "leadId": "LD-59084",
+      "type": "SITE_VISIT_BOOKED",
+      "title": "Site Visit Booked: Aura Elysium",
+      "description": "Scheduled for Sunday, 29 Nov at 11:00 AM. Reminders queued.",
+      "timestamp": "2026-11-09T16:46:12.321Z",
+      "actor": "Booking Engine"
+    },
+    {
+      "id": "act-1794242772323",
+      "leadId": "LD-58832",
+      "type": "LEAD_CREATED",
+      "title": "New Lead Ingested (WEBSITE)",
+      "description": "Lead created with score 15 (COLD). Assigned to Priya Shah.",
+      "timestamp": "2026-11-09T16:46:12.323Z",
+      "actor": "System"
+    },
+    {
+      "id": "act-1794242772324",
+      "leadId": "LD-58832",
+      "type": "OPT_OUT",
+      "title": "Buyer Opted Out of Marketing Contacts",
+      "description": "Compliance safety enforced: All future automated marketing notifications cancelled.",
+      "timestamp": "2026-11-09T16:46:12.324Z",
+      "actor": "Buyer / Consent Gateway"
+    }
+  ]
+}
